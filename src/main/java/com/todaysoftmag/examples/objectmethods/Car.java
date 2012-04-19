@@ -4,7 +4,11 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-
+/**
+ * A POJO to show-case overriding equals, hashCode and toString from {@link Object} 
+ * @author bolog
+ *
+ */
 public class Car {
     private String type;
     private int numberOfDoors;
