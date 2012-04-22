@@ -4,16 +4,25 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
- * A POJO to show-case overriding equals, hashCode and toString from {@link Object} 
+ * A POJO to show-case overriding equals, hashCode and toString from {@link Object}
+ * 
  * @author bolog
- *
+ * 
  */
 public class Car {
     private String type;
     private int numberOfDoors;
     private boolean isAllWheelDrive;
 
+    /**
+     * 
+     * @param type
+     * @param numberOfDoors
+     * @param isAllWheelDrive
+     * 
+     */
     public Car(String type, int numberOfDoors, boolean isAllWheelDrive) {
         this.type = type;
         this.numberOfDoors = numberOfDoors;
