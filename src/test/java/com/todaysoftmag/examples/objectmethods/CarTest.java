@@ -2,6 +2,9 @@ package com.todaysoftmag.examples.objectmethods;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Test;
 
 /**
@@ -24,6 +27,17 @@ public class CarTest {
         Car secondCar = new Car("BMW", 3, false);
         
         assertTrue(firstCar.equals(secondCar));
+    }
+    
+    @Test
+    public void testFindCar() {
+        List<Car> cars = new ArrayList<Car>(); 
+        Car firstCar = new Car("BMW", 3, false);
+        cars.add(firstCar);
+        Car secondCar = new Car("Mercedes", 5, true);
+        cars.add(secondCar);
+        
+        assertTrue(cars.indexOf(new Car("BMW", 3, false)) > -1);
     }
     
     @Test
