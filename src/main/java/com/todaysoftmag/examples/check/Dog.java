@@ -10,6 +10,13 @@ public class Dog {
     private String name;
     private String color;
 
+    /**
+     * 
+     * @param name
+     * @param color
+     * @throws IllegalArgumentException
+     *         if the name is <code>null</code>
+     */
     public Dog(String name, String color) {
         checkParams(name);
         this.name = name;
