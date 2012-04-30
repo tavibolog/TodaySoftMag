@@ -17,12 +17,14 @@ public class ResourceCleaner {
 
     private void openWithoutClosingStreams() throws Exception {
         FileInputStream fis = new FileInputStream(new File("README"));
+        // do you file manipulation here
     }
 
     private void openClosingStreams() throws Exception {
         FileInputStream fis = null;
         try {
             fis = new FileInputStream(new File("README"));
+            // do you file manipulation here
         } finally {
             if (fis != null) {
                 fis.close();
