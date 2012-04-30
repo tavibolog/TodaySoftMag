@@ -27,5 +27,5 @@ public class Dog {
         if (name == null) {
             throw new IllegalArgumentException("the dog must have a name!");
         }
-    }
+    }    
 }
