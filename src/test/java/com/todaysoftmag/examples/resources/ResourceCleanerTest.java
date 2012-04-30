@@ -8,8 +8,13 @@ public class ResourceCleanerTest {
     ResourceCleaner resourceCleaner = new ResourceCleaner();
 
     @Test
-    public void testOpenFileWithClosingStreams() throws Exception {
+    public void testOpenFilesWithClosingStreams() throws Exception {
         resourceCleaner.openFiles(10000, true);
+    }
+    
+    @Test
+    public void testOpenFilesUsingJdk17() throws Exception {
+        resourceCleaner.openFileJdk17(10000);
     }
 
     @Test(expected = FileNotFoundException.class)
