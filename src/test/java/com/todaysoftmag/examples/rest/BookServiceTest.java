@@ -60,7 +60,7 @@ public class BookServiceTest {
     public void testAddBook() {
         Book book = new Book("3", "Bruce Eckel", "Thinking in Java");
 
-        Book returnedBook = service.path("/books").path("/add").type(MediaType.APPLICATION_JSON).accept(MediaType.TEXT_XML).put(Book.class, book);
+        Book returnedBook = service.path("/books").path("/add").type(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON).put(Book.class, book);
 
         assertTrue(returnedBook.id.equals(book.id));
 

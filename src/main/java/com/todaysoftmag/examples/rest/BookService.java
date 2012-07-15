@@ -63,6 +63,7 @@ public class BookService {
     @PUT
     @Path("/add")
     @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Book add(Book book) {
         books.add(book);
         return book;
