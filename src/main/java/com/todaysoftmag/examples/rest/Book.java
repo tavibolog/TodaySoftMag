@@ -17,13 +17,13 @@ public class Book {
     public Book() {
 
     }
-
+    
     public Book(String id, String name, String author) {
         this.id = id;
         this.name = name;
         this.author = author;
     }
-
+    
     @Override
     public String toString() {
         return new ToStringBuilder(this).append("id", id).append("name", name).append("author", author).toString();
