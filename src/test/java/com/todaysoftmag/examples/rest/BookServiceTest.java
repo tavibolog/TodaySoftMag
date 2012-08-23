@@ -16,7 +16,7 @@ import com.sun.jersey.api.client.config.ClientConfig;
 import com.sun.jersey.api.client.config.DefaultClientConfig;
 
 public class BookServiceTest {
-    private static final String BASE_URI = "http://localhost:7000/TodaySoftMag";
+    private static final String BASE_URI = "http://localhost:8080/TodaySoftMag";
     private static WebResource resource;
 
     @BeforeClass
